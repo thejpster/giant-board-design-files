@@ -539,7 +539,7 @@
     (add_net nPBSTAT)
   )
 
-  (module footprints:1051620001 (layer B.Cu) (tedit 5C0E8FB3) (tstamp 5BE21C2B)
+  (module ATSAMA5D27-1G:1051620001 (layer B.Cu) (tedit 5C0E8FB3) (tstamp 5BE21C2B)
     (at 135.03726 116.64162 180)
     (descr 1051620001)
     (tags Connector)
@@ -597,7 +597,7 @@
     )
   )
 
-  (module footprints:NetTie-2_SMD_Padsmall (layer F.Cu) (tedit 5C72FC66) (tstamp 5C6A2B06)
+  (module ATSAMA5D27-1G:NetTie-2_SMD_Padsmall (layer F.Cu) (tedit 5C72FC66) (tstamp 5C6A2B06)
     (at 135.38726 101.08962)
     (descr "Net tie, 2 pin, 0.5mm square SMD pads")
     (tags "net tie")
@@ -654,7 +654,7 @@
     )
   )
 
-  (module footprints:L_0603 (layer B.Cu) (tedit 5C12A30E) (tstamp 5C2388F5)
+  (module ATSAMA5D27-1G:L_0603 (layer B.Cu) (tedit 5C12A30E) (tstamp 5C2388F5)
     (at 142.2097 92.334451 270)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -690,7 +690,7 @@
     )
   )
 
-  (module footprints:L_0603 (layer B.Cu) (tedit 5C12A0B4) (tstamp 5C2388E5)
+  (module ATSAMA5D27-1G:L_0603 (layer B.Cu) (tedit 5C12A0B4) (tstamp 5C2388E5)
     (at 140.39096 92.38942 270)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -726,7 +726,7 @@
     )
   )
 
-  (module footprints:L_0603 (layer B.Cu) (tedit 5C12A3C1) (tstamp 5CE6F247)
+  (module ATSAMA5D27-1G:L_0603 (layer B.Cu) (tedit 5C12A3C1) (tstamp 5CE6F247)
     (at 141.74986 100.53082 270)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
@@ -762,7 +762,7 @@
     )
   )
 
-  (module ATSAMA5D27C-D1G-CU:BGA289C80P17X17_1400X1400X120N (layer F.Cu) (tedit 5B90849C) (tstamp 5BA46D56)
+  (module ATSAMA5D27-1G:BGA289C80P17X17_1400X1400X120N (layer F.Cu) (tedit 5B90849C) (tstamp 5BA46D56)
     (at 135.12452 103.08938 180)
     (path /5B9FFE8B)
     (attr smd)
@@ -1452,7 +1452,7 @@
     )
   )
 
-  (module OSD3358-CHIP:USB_Micro-B_Molex-105017-0001 (layer F.Cu) (tedit 5B902069) (tstamp 5B8F3099)
+  (module ATSAMA5D27-1G:USB_Micro-B_Molex-105017-0001 (layer F.Cu) (tedit 5B902069) (tstamp 5B8F3099)
     (at 135.12452 71.97438 180)
     (descr http://www.molex.com/pdm_docs/sd/1050170001_sd.pdf)
     (tags "Micro-USB SMD Typ-B")
@@ -5092,7 +5092,7 @@
     )
   )
 
-  (module OSD3358-CHIP:MINI_PUSHBUTTON (layer F.Cu) (tedit 200000) (tstamp 5BEC8912)
+  (module ATSAMA5D27-1G:MINI_PUSHBUTTON (layer F.Cu) (tedit 200000) (tstamp 5BEC8912)
     (at 139.66198 117.4777 180)
     (path /5BB34D10)
     (attr smd)
@@ -6328,7 +6328,7 @@
     )
   )
 
-  (module 10104111-0001LF:FRAMATOME_10104111-0001LF (layer B.Cu) (tedit 5C0E8FAA) (tstamp 5C168724)
+  (module ATSAMA5D27-1G:FRAMATOME_10104111-0001LF (layer B.Cu) (tedit 5C0E8FAA) (tstamp 5C168724)
     (at 144.44226 80.16002 270)
     (path /5C0AF1F1)
     (attr smd)
@@ -6764,7 +6764,7 @@
     )
   )
 
-  (module footprints:NetTie-2_SMD_Padsmall (layer B.Cu) (tedit 5C59ED18) (tstamp 5C590349)
+  (module ATSAMA5D27-1G:NetTie-2_SMD_Padsmall (layer B.Cu) (tedit 5C59ED18) (tstamp 5C590349)
     (at 138.89236 95.48892 90)
     (descr "Net tie, 2 pin, 0.5mm square SMD pads")
     (tags "net tie")
