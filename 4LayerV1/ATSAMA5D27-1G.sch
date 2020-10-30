@@ -4144,11 +4144,11 @@ Wire Wire Line
 Wire Wire Line
 	7500 7700 7600 7700
 $Comp
-L Connector:USB_B_Micro J7
+L Connector:USB_A J7
 U 1 1 5C0AF1F1
 P 4750 15500
 F 0 "J7" V 4759 15829 50  0000 L CNN
-F 1 "USB_B_Micro" V 4850 15829 50  0000 L CNN
+F 1 "USB_A_Micro" V 4850 15829 50  0000 L CNN
 F 2 "10104111-0001LF:FRAMATOME_10104111-0001LF" H 4900 15450 50  0001 C CNN
 F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/10104111.pdf" H 4900 15450 50  0001 C CNN
 F 4 "Amphenol" H 4750 15500 50  0001 C CNN "Manufacturer_Name"
@@ -5474,4 +5474,5 @@ Wire Notes Line
 Text Notes 3000 11750 0    157  ~ 31
 SWDIO
 NoConn ~ 2650 1850
+NoConn ~ 3800 15700
 $EndSCHEMATC
