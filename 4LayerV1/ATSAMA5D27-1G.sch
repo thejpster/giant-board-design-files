@@ -3386,12 +3386,10 @@ Text GLabel 13000 13800 0    39   Input ~ 0
 AD5
 Wire Wire Line
 	14600 14100 14350 14100
-Text GLabel 16050 7750 2    39   Input ~ 0
-PMIC_IRQ_PB13
-Wire Wire Line
-	16050 7750 15850 7750
+Text GLabel 16050 7450 2    39   Input ~ 0
+PMIC_IRQ_PB10
 Text GLabel 3800 8550 0    39   Input ~ 0
-PMIC_IRQ_PB13
+PMIC_IRQ_PB10
 Text GLabel 14500 7650 2    39   Input ~ 0
 PMIC_CHGLEV_PA12
 Wire Wire Line
@@ -3868,13 +3866,11 @@ Text GLabel 14600 14400 2    39   Input ~ 0
 I2C_TWD0
 Text GLabel 19350 9550 2    39   Input ~ 0
 ADTRG-IRQ
-Wire Wire Line
-	16050 9550 15850 9550
 Text GLabel 17700 6450 2    39   Input ~ 0
 I2C_TWCK0
 Wire Wire Line
 	17700 6450 17500 6450
-Text GLabel 16050 9550 2    39   Input ~ 0
+Text GLabel 19360 9350 2    39   Input ~ 0
 I2C_TWD0
 Text GLabel 13000 14100 0    39   Input ~ 0
 SPI0_SCK
@@ -5475,4 +5471,88 @@ Text Notes 3000 11750 0    157  ~ 31
 SWDIO
 NoConn ~ 2650 1850
 NoConn ~ 3800 15700
+Text GLabel 16050 7550 2    39   Input ~ 0
+LCDDAT[0]
+Text GLabel 16050 7650 2    39   Input ~ 0
+LCDDAT[1]
+Text GLabel 16050 7750 2    39   Input ~ 0
+LCDDAT[2]
+Text GLabel 16050 7850 2    39   Input ~ 0
+LCDDAT[3]
+Text GLabel 16050 7950 2    39   Input ~ 0
+LCDDAT[4]
+Text GLabel 16050 8050 2    39   Input ~ 0
+LCDDAT[5]
+Text GLabel 16050 8150 2    39   Input ~ 0
+LCDDAT[6]
+Text GLabel 16050 8250 2    39   Input ~ 0
+LCDDAT[7]
+Text GLabel 16050 8350 2    39   Input ~ 0
+LCDDAT[8]
+Text GLabel 16050 8450 2    39   Input ~ 0
+LCDDAT[9]
+Text GLabel 16050 8550 2    39   Input ~ 0
+LCDDAT[10]
+Text GLabel 16050 8650 2    39   Input ~ 0
+LCDDAT[11]
+Text GLabel 16050 8750 2    39   Input ~ 0
+LCDDAT[12]
+Text GLabel 16050 8850 2    39   Input ~ 0
+LCDDAT[13]
+Text GLabel 16050 8950 2    39   Input ~ 0
+LCDDAT[14]
+Text GLabel 16050 9050 2    39   Input ~ 0
+LCDDAT[15]
+Text GLabel 16050 9150 2    39   Input ~ 0
+LCDDAT[16]
+Text GLabel 16050 9250 2    39   Input ~ 0
+LCDDAT[17]
+Wire Wire Line
+	19360 9350 19100 9350
+Text GLabel 17700 6950 2    39   Input ~ 0
+LCDVSYNC
+Text GLabel 17700 7050 2    39   Input ~ 0
+LCDHSYNC
+Wire Wire Line
+	17700 7050 17500 7050
+Wire Wire Line
+	17700 6950 17500 6950
+Wire Wire Line
+	15850 7550 16050 7550
+Wire Wire Line
+	15850 7650 16050 7650
+Wire Wire Line
+	15850 7750 16050 7750
+Wire Wire Line
+	15850 7850 16050 7850
+Wire Wire Line
+	16050 7950 15850 7950
+Wire Wire Line
+	15850 8050 16050 8050
+Wire Wire Line
+	16050 8150 15850 8150
+Wire Wire Line
+	15850 8250 16050 8250
+Wire Wire Line
+	16050 8350 15850 8350
+Wire Wire Line
+	15850 8450 16050 8450
+Wire Wire Line
+	16050 8550 15850 8550
+Wire Wire Line
+	15850 8650 16050 8650
+Wire Wire Line
+	16050 8750 15850 8750
+Wire Wire Line
+	15850 8850 16050 8850
+Wire Wire Line
+	16050 8950 15850 8950
+Wire Wire Line
+	15850 9050 16050 9050
+Wire Wire Line
+	16050 9150 15850 9150
+Wire Wire Line
+	15850 9250 16050 9250
+Wire Wire Line
+	16050 7450 15850 7450
 $EndSCHEMATC
