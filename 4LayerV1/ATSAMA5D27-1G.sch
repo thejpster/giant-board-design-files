@@ -3072,7 +3072,7 @@ Wire Wire Line
 Text GLabel 3950 15500 2    39   Input ~ 0
 USBA_P
 Text GLabel 3950 15600 2    39   Input ~ 0
-USBA_M
+USBA_N
 Wire Wire Line
 	18250 2000 17850 2000
 Wire Wire Line
@@ -3090,11 +3090,11 @@ Wire Wire Line
 Text GLabel 18250 2000 2    39   Input ~ 0
 USBA_P
 Text GLabel 18250 2100 2    39   Input ~ 0
-USBA_M
+USBA_N
 Text GLabel 1250 2600 0    39   Input ~ 0
 VDD_3V3
 Text GLabel 18250 2350 2    39   Input ~ 0
-USBB_M
+USBB_N
 Text GLabel 18250 2250 2    39   Input ~ 0
 USBB_P
 Wire Wire Line
@@ -4030,7 +4030,7 @@ F 3 "~" H 5100 14400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4750 14400 0    39   Input ~ 0
-USBB_M
+USBB_N
 Text GLabel 4750 14500 0    39   Input ~ 0
 USBB_P
 Wire Wire Line
@@ -4144,11 +4144,11 @@ Wire Wire Line
 Wire Wire Line
 	7500 7700 7600 7700
 $Comp
-L Connector:USB_A J7
+L Connector:USB_OTG J7
 U 1 1 5C0AF1F1
 P 4750 15500
 F 0 "J7" V 4759 15829 50  0000 L CNN
-F 1 "USB_A_Micro" V 4850 15829 50  0000 L CNN
+F 1 "USB_AB_Micro" V 4850 15829 50  0000 L CNN
 F 2 "ATSAMA5D27-1G:FRAMATOME_10104111-0001LF" H 4900 15450 50  0001 C CNN
 F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/10104111.pdf" H 4900 15450 50  0001 C CNN
 F 4 "Amphenol" H 4750 15500 50  0001 C CNN "Manufacturer_Name"
@@ -4157,7 +4157,7 @@ F 5 "10104111-0001LF" H 4750 15500 50  0001 C CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 Text GLabel 5200 15600 2    39   Input ~ 0
-USBB_M
+USBB_N
 Text GLabel 5200 15500 2    39   Input ~ 0
 USBB_P
 Wire Wire Line
@@ -4192,10 +4192,8 @@ F 3 "" H 4550 16050 60  0001 C CNN
 	1    4550 16050
 	1    0    0    -1  
 $EndComp
-Text GLabel 5250 15300 2    39   Input ~ 0
+Text GLabel 5370 15300 2    39   Input ~ 0
 VBUS
-Wire Wire Line
-	5250 15300 5050 15300
 $Comp
 L Device:R_Small R14
 U 1 1 5CA18755
@@ -5377,19 +5375,6 @@ F 3 "" H 6550 15150 50  0001 C CNN
 	1    6550 15150
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_Small R36
-U 1 1 5C307E80
-P 6750 15150
-F 0 "R36" V 6850 15150 50  0000 C CNN
-F 1 "0R" V 6650 15150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 6750 15150 50  0001 C CNN
-F 3 "~" H 6750 15150 50  0001 C CNN
-F 4 "Stackpole" H 6750 15150 50  0001 C CNN "Manufacturer_Name"
-F 5 "RMCF0402ZT0R00" H 6750 15150 50  0001 C CNN "Manufacturer_Part_Number"
-	1    6750 15150
-	0    1    1    0   
-$EndComp
 Text GLabel 7000 15150 2    39   Input ~ 0
 SDMMC1_CD
 Wire Wire Line
@@ -5475,4 +5460,37 @@ Text Notes 3000 11750 0    157  ~ 31
 SWDIO
 NoConn ~ 2650 1850
 NoConn ~ 3800 15700
+NoConn ~ 5050 15700
+Wire Wire Line
+	5050 15300 5110 15300
+Text Notes 4910 16270 0    50   ~ 0
+Fit R13 if J7 is used\nas USB Host. Remove\nR13 if J7 is used as\nUSB Device
+Wire Wire Line
+	5370 15300 5310 15300
+$Comp
+L Device:R_Small R36
+U 1 1 5C307E80
+P 6750 15150
+F 0 "R36" V 6850 15150 50  0000 C CNN
+F 1 "0R" V 6650 15150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6750 15150 50  0001 C CNN
+F 3 "~" H 6750 15150 50  0001 C CNN
+F 4 "Stackpole" H 6750 15150 50  0001 C CNN "Manufacturer_Name"
+F 5 "RMCF0402ZT0R00" H 6750 15150 50  0001 C CNN "Manufacturer_Part_Number"
+	1    6750 15150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R13
+U 1 1 64311672
+P 5210 15300
+F 0 "R13" V 5310 15300 50  0000 C CNN
+F 1 "0R" V 5110 15300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5210 15300 50  0001 C CNN
+F 3 "~" H 5210 15300 50  0001 C CNN
+F 4 "Stackpole" H 5210 15300 50  0001 C CNN "Manufacturer_Name"
+F 5 "RMCF0402ZT0R00" H 5210 15300 50  0001 C CNN "Manufacturer_Part_Number"
+	1    5210 15300
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
